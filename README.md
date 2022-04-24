@@ -53,41 +53,16 @@ end`
 
 
 ### 스크립트 만들기
-``local Player = game.Players.LoaclPlayer
 
-local TargetPart = nil
-for _, v in pairs(game.Workspace:GetChildren()) do
-	if v:FindFirstChildOfClass("MeshPart") then
-		if v:FindFirstChildOfClass("MeshPart").MeshId == "rbxassetid://5049754335" then
-			TargetPart = v
-		end
-	end
-end
+#### 자동 획득 스크립트는 Script1.lua
 
 
-if TargetPart then
-	TargetPart.Anchored = true
-	TargetPart.CanCollide = false
-	TargetPart.Transparency = 1
-	for _, v in pairs(TargetPart:GetChildren()) do
-		if v:IsA("BasePart") then
-			TargetPart.Anchored = true
-			v.CanCollide = false
-			v.Transparency = 1
-		end
-	end
-	while wait() do
-		if Player.Character ~= nil then
-			if Player.Character:FindFirstChild("HumanoidRootPart") then
-				local HRP = Player.Character:FindFirstChild("HumanoidRootPart") 
-			end
-		end
-	end
-end``
+타겟 파트를 찾은 뒤에
 
-타겟 파트를 찾은 뒤에 
 파트를 고정하고, 통과할수 있게 하고, 투명하게 만든뒤에
+
 터치 이밴트 특징을 생각해서 플레이어의 위치에 타겟 파트를 티피를 시키면
+
 총을 얻을 수 있을 때 자동으로 획득할수 있다
 
 
