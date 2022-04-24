@@ -40,7 +40,7 @@ MeshPart와 MeshPart의 MeshId로 구별하게 하는 방법을 사용하면 좋
 ### 스크립트 만들기
 
 
-#### 자동 획득 스크립트는 Script1.lua 파일 확인!
+#### 자동 획득 스크립트는 [Script1.lua](https://github.com/Newbie0823/--/blob/main/Script1.lua) 파일 확인!
 
 
 
@@ -91,7 +91,7 @@ MeshPart와 MeshPart의 MeshId로 구별하게 하는 방법을 사용하면 좋
 ### 스크립트 만들기
 
 
-#### 킬 스크립트는 Script2.lua 파일 확인!
+#### 킬 스크립트는 [Script2.lua](https://github.com/Newbie0823/--/blob/main/Script2.lua) 파일 확인!
 
 
 ---
