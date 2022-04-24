@@ -2,10 +2,10 @@
 ## 시작전 알고 있어야는 것
 ---
 
-### 허점을 찾을 때 유용한 도구가 있는 어드민:
+### 허점을 찾을 때 유용한 도구가 있는 어드민 스크립트(infiniteyield):
 
 #### 스크립트 : `loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"),true)()`
-dex,rspy 등
+커멘드 dex,rspy 등
 
 
 
@@ -18,22 +18,30 @@ dex,rspy 등
 ### 자동 총 획득 스크립트를 알기 전에
 
 #### Roblox의 시스템에 대해 알고 있어야 됩니다.
+
 *로컬*에서 파트의 위치를 변경 한 뒤에 터치하면
+
 **자신의 네터워크가 아닌 소유인 모델**이 아니면 그 위치로 가더라도 터치 이밴트가 발생이 안되지만
+
 **자신의 네터워크 소유인 모델**이 그 위치로 가면 터치 이밴트가 발생 합니다.
+
 
 
 ### 총을 얻기 전 작동 되는 시스템
 
+
 터치 이밴트가 발생 ▶️ 터치한 파트가 플레이어인지 확인
+
 ▶️ 서버 스토리지에서 총을 복사하여 플레이어 캐릭터에 장착
 
 
 ### Dex V3를 확용한 파트 찾기
 
+
 ![](https://user-images.githubusercontent.com/100512656/164963351-03ca0cef-df42-4009-993f-6ac593570892.png)
 
 총이 스폰되는 파트를 찾은 뒤
+
 
 ![](https://user-images.githubusercontent.com/100512656/164964529-6ff9474b-39ab-4815-9aba-8478b55482b9.png)
 
@@ -42,6 +50,7 @@ MeshPart와 MeshPart의 MeshId로 구별하게 하는 방법을 알 수 있다
 
 
 이제 파트를 찾는 방법을 스크립트로 만든다
+
 `local TargetPart = nil
 for _, v in pairs(game.Workspace:GetChildren()) do
 	if v:FindFirstChildOfClass("MeshPart") then
@@ -54,7 +63,9 @@ end`
 
 ### 스크립트 만들기
 
+
 #### 자동 획득 스크립트는 Script1.lua
+
 
 
 타겟 파트를 찾은 뒤에
@@ -81,18 +92,23 @@ end`
 
 플레이어의 가방에서 총의 이름을 구한다
 
+
 ![](https://user-images.githubusercontent.com/100512656/164965375-0b3cf1cd-78fc-4464-82f7-5166eef050cf.png)
 
 플레이어의 총에서 리모트를 구한다
+
 
 ![](https://user-images.githubusercontent.com/100512656/164965423-3377ad7e-75d3-4012-b857-f7faebc449ae.png)
 
 플레이어의 총에서 리모트의 작동원리를 로컬 스크립트를 확인 하여 구한다
 
+
 ![](https://user-images.githubusercontent.com/100512656/164965439-50eeaea6-3536-487f-b9c5-c04e8781dd76.png)
 
 확인 하면 마우스에 감지된 타겟을 구한뒤에
+
 타겟에게 휴먼노이드가 있는지 확인하고
+
 있다면 리모트로 서버에 그 휴머노이드를 보낸다
 
 
