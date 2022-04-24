@@ -49,18 +49,6 @@
 MeshPart와 MeshPart의 MeshId로 구별하게 하는 방법을 알 수 있다
 
 
-이제 파트를 찾는 방법을 스크립트로 만든다
-
-`local TargetPart = nil
-for _, v in pairs(game.Workspace:GetChildren()) do
-	if v:FindFirstChildOfClass("MeshPart") then
-		if v:FindFirstChildOfClass("MeshPart").MeshId == "rbxassetid://5049754335" then
-			TargetPart = v
-		end
-	end
-end`
-
-
 ### 스크립트 만들기
 
 
@@ -113,11 +101,9 @@ end`
 
 
 ### 스크립트 만들기
-`local Player = game.Players.LoaclPlayer
-local GunName = "pistol"
-local TargetName = ""
-Player.Backpack[GunName].RemoteEvent:FireServer(game.Players[TargetName].Character.Humanoid)`
 
+
+#### 킬 스크립트는 Script2.lua
 
 
 ---
